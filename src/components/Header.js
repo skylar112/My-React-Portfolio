@@ -14,12 +14,11 @@ const useStyles = makeStyles(theme=> ({
 
     title:{
         color: "white"
-    },
+        },
     
     subtitle:{
-        color: "tomato",
+        color: "#ff867f",
         marginBottom: "3rem",
-           
     },
     typedContainer:{
         position: "absolute",
@@ -38,14 +37,13 @@ const Header = () => {
         <Grid container justify="center">
             <Avatar className={classes.avatar} src={avatar} alt="Chu Lin"/>
         </Grid>
-        <Typography className={classes.title} variant="H1">
+        <Typography className={classes.title} variant="h2" >
         <Typed strings={["Chu Lin"]} typeSpeed={280} />
-        
         </Typography>
         <br/>
-        <Typography className={classes.subtitle} variant="H3">
+        <Typography className={classes.subtitle} variant="h2">
         <Typed 
-            strings={["Web Design", "Web Development", "All Around Hustler"]} 
+            strings={["Your next programmer", "Web Design", "Web Development"]} 
             typeSpeed={40}
             backSpeed={90}
             loop

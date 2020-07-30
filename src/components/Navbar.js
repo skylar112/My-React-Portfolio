@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 //importing from materialize
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 //below allows menu to slide 
 import MobileMenuSlider from "@material-ui/core/Drawer"
 //import elements from materialize
@@ -53,19 +54,19 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/"
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/Resume"
   },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath: "/Resume"
   },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contact",
-  },
+  
 ];
 
 
@@ -92,7 +93,7 @@ const Navbar = () => {
     <List>
       {menuItems.map((lsItem, key) =>(
         
-        <ListItem button key={key}>
+        <ListItem button key={key} component={Link} to={lsItem.listPath}>
           <ListItemIcon className={classes.listItem} >{lsItem.listIcon}</ListItemIcon>
           <ListItemText 
           className={classes.listItem}

@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Header from "./Header";
-import Particles from "react-particles-js";
-import {makeStyles} from "@material-ui/styles";
+import {Link} from 'react-router-dom';
+import Header from './Header';
+import Particles from 'react-particles-js';
+import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
     particlesCanva: {
@@ -29,10 +30,10 @@ const Home = () => {
                         }
                     },
                     shape: {
-                        type: "triangle",
+                        type: "star",
                         stroke: {
                             width: 1,
-                            color: "tomato"
+                            color: "yellow"
                         }
                     },
                     size: {
@@ -40,9 +41,9 @@ const Home = () => {
                         random: true, 
                         anim: {
                             enable: true, 
-                            speed: 6,
+                            speed: 8,
                             size_min: 0.1,
-                            sync: false
+                            sync: true
                         }
                     },
                     opacity: {
