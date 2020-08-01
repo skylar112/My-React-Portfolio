@@ -12,14 +12,15 @@ import {
   Typography,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
-import project1 from "../images/background2.jpg";
+import project1 from "../images/pj1.jpg";
 import project2 from "../images/pj2.jpg";
 import project3 from "../images/pj3.jpg";
 import project4 from "../images/pj4.jpg";
 
+
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
+    background: "#546e7a",
     height: "100%",
   },
   cardContainer: {
@@ -46,10 +47,10 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 1
+                  Random Password Generator
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Project 1 is awesome, better than project 0
+                  Follow the alert prompts, and it will generate a password. 
                 </Typography>
               </CardContent>
               <CardActions>
@@ -75,10 +76,10 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 2
+                  Recipe and Videos
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Project 2 is awesome, better than project 1
+                  This application uses a search function to return relevant recipes and videos for the user inputted dish.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -92,22 +93,22 @@ const Portfolio = () => {
             </CardActionArea>
           </Card>
         </Grid>
-        {/* Project 2 */}
+        {/* Project 3 */}
         <Grid item xs={12} sm={8} sm={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Project 2"
+                alt="Project 3"
                 height="140"
                 image={project3}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 3
+                  Family Guy Burger App
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Project 3 is awesome, better than project 1
+                  This is a full stack application utilizing mySQL, Node, to demonstrate CRUD functions. The user can create burgers, update the burger or delete it.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -127,16 +128,16 @@ const Portfolio = () => {
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Project 2"
+                alt="Project 4"
                 height="140"
                 image={project4}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 4
+                  NBA Team Builder
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Project 4 is awesome, better than project 1
+                  This application allows the user to input players and compare their key metrics and stats.
                 </Typography>
               </CardContent>
               <CardActions>
