@@ -13,12 +13,14 @@ const useStyles = makeStyles(theme=> ({
     },
 
     title:{
-        color: "white"
+        color: "white",
+        opacity: "75%"
         },
     
     subtitle:{
-        color: "#ff867f",
+        color: "#283593",
         marginBottom: "3rem",
+        opacity: "60%"
     },
     typedContainer:{
         position: "absolute",
@@ -43,7 +45,7 @@ const Header = () => {
         <br/>
         <Typography className={classes.subtitle} variant="h2">
         <Typed 
-            strings={["Your next programmer", "Web Design", "Web Development"]} 
+            strings={["Web Design","Web Development", "Full Stack Development"]} 
             typeSpeed={40}
             backSpeed={90}
             loop

@@ -4,66 +4,51 @@ import {Typography, Box} from "@material-ui/core";
 import Navbar from "./Navbar";
 
 
+
 const useStyles = makeStyles( theme => ({
     mainContainer: {
-        background: "#233",
-        maxwidth: "5rem"
+        background: "#efebe9",
+        maxwidth: "5rem",
+        opacity: "60%"
     },
-    timeLine:{
-        position: "relative",
+    // timeLine:{
+    //     position: "relative",
+    //     padding: "1rem",
+    //     margin: "0 auto",
+    //     maxwidth: "5rem"
+    // },
+
+    timeLineItem: {
         padding: "1rem",
-        margin: "0 auto",
+        borderBottom: "2px solid tan",
+        position: "relative",
+        margin: "1rem 3rem 1rem 1rem",
+        clear: "both",
+        // "&:after":{
+        //     content: "''",
+        //     position: "absolute"
+        // },
         // "&:before":{
         //     content: "''",
         //     position: "absolute",
-        //     height: "100%",
-        //     border: "1px solid green",
-        //     right: "40px",
-        //     top : 0
+        //     right: "-0.625",
+                
         // },
-        // "$:after":{
-        //     content: "''",
-        //     display: "table",
-        //     clear: "both"
-        //},
-
-        // [theme.breakpoints.up("md")]:{
-        //     padding: "2rem",
-        //     "&:before": {
-        //         left: "calc(50% - 1px)",
-        //         right: "auto"
-        //     }
-        // }
-        //look on 2b 3min in
     },
+
     timeLineYear: {
         textAlign: "center",
-        maxwidth: "9.375rem",
+        maxwidth: "50%",
         margin: "0 3rem 0auto",
-        fontSize: "1.8rem",
-        background: "#8559da",
-        color: "white",
+        fontSize: "1rem",
+        background: "#c5cae9",
+        color: "#283593",
         lineHeight: 1,
-        padding: "0.5 rem 0 1rem",
-        "&:before":{
-            display: "none"
-        },
-        // [theme.breakpoints.up("md")]{
-        //     textAlign:"center",
-        //     margin: "0 auto",
-        //     "&:nth-of-type(2n)": {
-        //         float: "none",
-        //         margin: "0 auto"
-        //     },
-        //     "&:nth-of-type(2n)before": {
-        //         display: "none"
-        //     }
-        // }
+        padding: "0.5 rem 0 rem",
+      
     }
 }));
 
-
-// should be  <Box component="header"  className={classes.mainContainer}> below
 const Resume = () => {
     const classes = useStyles();
     return( 
@@ -74,16 +59,20 @@ const Resume = () => {
             Working Experience
         </Typography>
          <Box component ="div" className ={classes.timeLine}>
-            <Typography variant="h5" className={classes.timeLineYear} align ="center" >
+            <Typography variant="h3" className={classes.timeLineYear} align ="center" >
             <h1>2020</h1>
-            <h2>Rutgers Full Stack Coding Bootcamp</h2>
+            <h2>Rutgers</h2>
+            <h3>Full Stack Coding Bootcamp</h3>
             </Typography>
-        </Box>
-        <Box component ="div" className ={classes.timeLine}>
-            <Typography variant="h5" className={classes.timeLineYear} align ="center" >
-                <h1>2019-2017</h1>
-                <h2>Investors Bank </h2>
+            <Typography variant="h3" className={classes.timeLineYear} align ="center" >
+                <h1>2019</h1>
+                <h2>Investors Bank</h2>
                 <h3>Risk Management Operations Manager</h3>
+            </Typography>
+            <Typography variant="h3" className={classes.timeLineYear} align ="center" >
+                <h1>2017</h1>
+                <h2>Investors Bank</h2>
+                <h3>Internal Loan Review Coordinator</h3>
             </Typography>
         </Box>
     </Box>

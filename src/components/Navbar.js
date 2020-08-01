@@ -64,7 +64,7 @@ const menuItems = [
   {
     listIcon: <Apps />,
     listText: "Portfolio",
-    listPath: "/Resume"
+    listPath: "/Portfolio"
   },
   
 ];
