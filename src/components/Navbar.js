@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 //below allows menu to slide 
+import Footer from "./Footer";
 import MobileMenuSlider from "@material-ui/core/Drawer"
 //import elements from materialize
 import {
@@ -25,8 +26,8 @@ import {
   AssignmentInd,
   Home,
   Apps,
-  ContactMail,
-} from "@material-ui/icons";
+}
+ from "@material-ui/icons";
 import avatar from "../images/color-profile.jpg";
 
 //css styles
@@ -65,6 +66,11 @@ const menuItems = [
     listIcon: <Apps />,
     listText: "Portfolio",
     listPath: "/Portfolio"
+  },
+  {
+    listIcon: <Apps />,
+    listText: "Contact",
+    listPath: "/Contact"
   },
   
 ];
@@ -107,20 +113,21 @@ const Navbar = () => {
     <>
      
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#708090" }}>
+        <AppBar position="static" style={{ background: "#708091" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack style={{ color: "#222" }} />
             </IconButton>
             <Typography variant="h5">
-              Portfolio
+              Menu
             </Typography>
             <MobileMenuSlider 
               anchor="left" 
               open={state.right}
               onClose={toggleSlider("right", false)}
               >
-              {sideList("right")}              
+              {sideList("right")}
+              <Footer/>                            
             </MobileMenuSlider>
           </Toolbar>
         </AppBar>

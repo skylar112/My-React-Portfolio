@@ -5,47 +5,20 @@ import Navbar from "./Navbar";
 
 
 
+
 const useStyles = makeStyles( theme => ({
     mainContainer: {
         background: "#efebe9",
         maxwidth: "5rem",
         opacity: "60%"
     },
-    // timeLine:{
-    //     position: "relative",
-    //     padding: "1rem",
-    //     margin: "0 auto",
-    //     maxwidth: "5rem"
-    // },
-
-    timeLineItem: {
-        padding: "1rem",
-        borderBottom: "2px solid tan",
-        position: "relative",
-        margin: "1rem 3rem 1rem 1rem",
-        clear: "both",
-        // "&:after":{
-        //     content: "''",
-        //     position: "absolute"
-        // },
-        // "&:before":{
-        //     content: "''",
-        //     position: "absolute",
-        //     right: "-0.625",
-                
-        // },
-    },
 
     timeLineYear: {
         textAlign: "center",
-        maxwidth: "50%",
-        margin: "0 3rem 0auto",
         fontSize: "1rem",
         background: "#c5cae9",
         color: "#283593",
         lineHeight: 1,
-        padding: "0.5 rem 0 rem",
-      
     }
 }));
 
@@ -73,6 +46,8 @@ const Resume = () => {
                 <h1>2017</h1>
                 <h2>Investors Bank</h2>
                 <h3>Internal Loan Review Coordinator</h3>
+            </Typography>
+            <Typography variant="h3" className={classes.timeLineYear} align ="center" >
             </Typography>
         </Box>
     </Box>
