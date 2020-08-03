@@ -2,8 +2,13 @@ packages installed
 -react
 -react-router-dom
 -react-dom
--particles
+-react-particles.js
 -axios
+-react-scripts
+-react-typed
+-@material-ui/core
+-@material-ui/icons
+-@material-ui/styles
 
 -have to create universal footer (maybe add Github and Linkedin buttons there)
 -link portfolio "link" button to live link
