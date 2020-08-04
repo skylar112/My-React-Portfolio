@@ -13,6 +13,11 @@
 -@material-ui/styles
 
 ####
-![landing-page](images/landing-page.jpg)
-
+Opening Page
+![](/src/images/landing-page.JPG)
+#####
+Side Menu - contains buttons for "Home," "Resume," "Portfolio," and "Contact." On the footer of the side menu are buttons for Github and my Linkedin
+![](/src/images/side-menu.JPG)
+######
+Challenges: This was a very challenging project for me, as freshly learning React as well as learning as I go with Material ui there are a lot of learning to do and lots of bugs to fix. 
 
